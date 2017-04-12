@@ -34,6 +34,7 @@
 #include <openvr_driver.h>
 
 // Standard includes
+#include <vector>
 
 using PropertiesStoreVariant = boost::variant<bool, float, std::int32_t, std::uint64_t, std::string>;
 using PropertiesStore = osvr::util::KVDataStore<vr::ETrackedDeviceProperty, PropertiesStoreVariant>;
