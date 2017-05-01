@@ -133,7 +133,7 @@ enum class Props {
     DisplayMCImageHeight = vr::Prop_DisplayMCImageHeight_Int32,
     DisplayMCImageNumChannels = vr::Prop_DisplayMCImageNumChannels_Int32,
     DisplayMCImageData = vr::Prop_DisplayMCImageData_Binary,
-    UsesDriverDirectMode = vr::Prop_UsesDriverDirectMode_Bool,
+    SecondsFromPhotonsToVblank = vr::Prop_SecondsFromPhotonsToVblank_Float, //TODO do something with it
     AttachedDeviceId = vr::Prop_AttachedDeviceId_String,
     SupportedButtons = vr::Prop_SupportedButtons_Uint64,
     Axis0Type = vr::Prop_Axis0Type_Int32,
@@ -241,7 +241,7 @@ namespace detail {
     template<> struct PropertyTypeTrait<vr::Prop_DisplayMCImageHeight_Int32> { using type = int32_t; };
     template<> struct PropertyTypeTrait<vr::Prop_DisplayMCImageNumChannels_Int32> { using type = int32_t; };
     template<> struct PropertyTypeTrait<vr::Prop_DisplayMCImageData_Binary> { using type = void *; };
-    template<> struct PropertyTypeTrait<vr::Prop_UsesDriverDirectMode_Bool> { using type = bool; };
+    template<> struct PropertyTypeTrait<vr::Prop_SecondsFromPhotonsToVblank_Float> { using type = float; };
     template<> struct PropertyTypeTrait<vr::Prop_AttachedDeviceId_String> { using type = std::string; };
     template<> struct PropertyTypeTrait<vr::Prop_SupportedButtons_Uint64> { using type = uint64_t; };
     template<> struct PropertyTypeTrait<vr::Prop_Axis0Type_Int32> { using type = int32_t; };

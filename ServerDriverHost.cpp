@@ -137,4 +137,6 @@ bool ServerDriverHost::PollNextEvent(VREvent_t *pEvent, uint32_t uncbVREvent ) {
     return true;
 }
 
-
+void ServerDriverHost::GetRawTrackedDevicePoses( float fPredictedSecondsFromNow, TrackedDevicePose_t *pTrackedDevicePoseArray, uint32_t unTrackedDevicePoseArrayCount ) {
+   //TODO implement something maybe
+}
